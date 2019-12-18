@@ -101,7 +101,7 @@ module.exports = {
         users: [{
             username: process.env.USERNAME,
             password: process.env.PASSWORD,
-            permissions: "*"
+            permissions: "*" 
         }]
     },
 
