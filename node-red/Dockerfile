@@ -9,7 +9,10 @@ RUN  npm install -g --unsafe-perm node-red-admin
 # install 
 USER node-red
 
+RUN cd /data
+
 RUN npm install node-red-dashboard
 RUN npm install node-red-contrib-credentials
+RUN npm install node-red-contrib-state-machine
 
 COPY ./settings.js /data/settings.js
