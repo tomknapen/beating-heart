@@ -12,7 +12,9 @@ USER node-red
 RUN cd /data
 
 RUN npm install node-red-dashboard
+
 RUN npm install node-red-contrib-credentials
 RUN npm install node-red-contrib-state-machine
+RUN npm install node-red-contrib-time-range-switch
 
 COPY ./settings.js /data/settings.js
