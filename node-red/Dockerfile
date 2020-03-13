@@ -21,3 +21,4 @@ RUN npm install node-red-contrib-state-machine
 RUN npm install node-red-contrib-telegrambot-home
 RUN npm install node-red-contrib-time-range-switch
 RUN npm install node-red-contrib-webhookrelay
+RUN npm install node-red-contrib-tasmota
