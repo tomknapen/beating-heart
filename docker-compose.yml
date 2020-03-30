@@ -2,15 +2,15 @@ version: '2'
 
 volumes:
   node-red-data:
-  mosquitto-config:
+  # mosquitto-config:
 
 services:
   mqtt:
     build: mosquitto
+    # volumes:
+    #   - 'mosquitto-config:/mosquitto/config'
     ports:
       - '1883:1883'
-    volumes:
-      - 'mosquitto-config:/mosquitto/config'
 
   node-red:
     build: node-red
