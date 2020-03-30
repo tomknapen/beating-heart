@@ -1,14 +1,14 @@
 version: '2'
 
 volumes:
+  mosquitto-data:
   node-red-data:
-  # mosquitto-config:
 
 services:
   mqtt:
     build: mosquitto
-    # volumes:
-    #   - 'mosquitto-config:/mosquitto/config'
+    volumes:
+      - 'mosquitto-data:/data'
     ports:
       - '1883:1883'
 
